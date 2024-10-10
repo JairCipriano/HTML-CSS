@@ -1,0 +1,20 @@
+@charset "UTF-8";
+@font-face {
+    font-family: gosto;
+    src: url('fontes/Sinera.otf') format(opentype), url('fontes/Sinera.ttf') format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    
+    font: 16px ;
+    color: black;
+}
+
+h1{
+    font-family: gosto;
+    font-weight: normal;
+    font-style: normal;
+
+}

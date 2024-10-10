@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Imagens dinÂmicas</h1>
+    <p>Tente abrir eese site em varios dispositivos</p>
+<picture>
+    <source media="(max-width:750px )" srcset="imagens/foto-p.png" type="image/png">
+    <source media="(max-width:1050px )" srcset="imagens/foto-m.png" type="image/png">
+    <img src="imagens/foto-g.png" alt="Imagem flexivel">
+
+    <h1>Reproduzindo audio</h1>
+    <p>Reproduzindo audios em HTML</p>
+   <audio preload="metadata" >
+    <source src="midea/my wave my wavee.mp3" type="audio/mpeg">
+    <source src="midea/my wave my wavee.ogg " type="audio/ogg">
+    <source src="midea/my wave my wavee.wav" type="audio/wav">
+    <p>Infelizmente seu navegador não suporta o arquivo!</p>
+    <a href="midea/my wave my wavee.wav">Clique aqui para baixar o arquivo WAV</a>
+   </audio>
+</picture>
+</body>
+</html>
