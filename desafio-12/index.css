@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html , body{
+    min-height: 100vh;
+    background-color: darkgrey;
+}
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+    }
+header > h1{
+    padding: 50px;
+    font-variant: small-caps;
+}
+header > p{
+    padding-bottom: 50px;
+}
+
+header a, footer a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+header a:hover, footer a:hover{
+    text-decoration: underline;
+}
+section > .normal , .imagem {
+    line-height: 2em;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+}
+.normal{
+    background-color: white;
+    color: black;
+}
+.imagem{
+    background-color: rgba(0, 0, 0, 0.548);
+    color: white;
+}
+select > .imagem p{
+    background-color: black;
+    width: 400px;
+} 
+footer{
+
+    background-color:black ;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
