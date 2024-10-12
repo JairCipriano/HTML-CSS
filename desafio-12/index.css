@@ -48,8 +48,8 @@ header a:hover, footer a:hover{
 }
 section {
     
-    padding-top: 8vh;
-    padding-bottom: 8vh;
+    padding-top: 9vh;
+    padding-bottom: 9vh;
     line-height: 2em;
     padding-left: 30px;
     font-family: var(--fonte3);
@@ -57,21 +57,26 @@ section {
     
 }
 .imagem > p{
-    padding-bottom: 2em;
-    text-shadow: 10px 2px 2px black;
+    padding-bottom: 4em;
+    
 }
 #img01{
     background-image: url(imagens/background001.jpg);
-    background-position: right center;
-    background-size: cover;
+   
+   
+    
+
 }
 #img02{
     background-image: url(imagens/background002.jpg);
+    
+   
 }
 
 .normal {
     background-color: white;
     color: black;
+    
     
 }
 .imagem{
@@ -79,9 +84,17 @@ section {
     color: white;
     display: inline-block;
     padding: 10px;
+    text-shadow: 2px 2px 2px black;
+    
+    
+   
 }
 .tudo{
     background-color: rgba(0, 0, 0, 0.589);
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.596);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: right center;
 }
 .dentro{
     background-color: white;
