@@ -14,10 +14,29 @@ td , th{
   padding: 10px;
   
 }
+caption{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px;
+    background-color: lightgray;
+}
+tbody > tr:nth-child(odd){
+    background-color: lightgray;
+    text-decoration: underline;
+    
+}
+tbody > tr:nth-child(even){
+    background-color: white;
+    font-weight: bold;
+}
 
 thead , tfoot{
     background-color: grey;
     color: white;
+
+}
+tfoot{
+    background-color: rgba(0, 0, 0, 0.678);
 }
 .num{
     text-align: right;
