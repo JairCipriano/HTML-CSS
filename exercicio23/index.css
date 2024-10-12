@@ -5,8 +5,10 @@ body {
 }
 
 table{
+    height: 1000px;
     width: 500px;
     border-collapse: collapse;
+    position: relative;
   
 }
 td , th{
@@ -34,6 +36,11 @@ thead , tfoot{
     background-color: grey;
     color: white;
 
+}
+thead > tr > th {
+    position: sticky;
+    top: 0;
+    background-color: red;
 }
 tfoot{
     background-color: rgba(0, 0, 0, 0.678);
