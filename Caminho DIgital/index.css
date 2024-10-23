@@ -60,22 +60,35 @@ nav > a {
         margin-right: 20px; /* Ajusta o espaço entre os links */
     }
 }
-main{
+main {
+    height: 400px;
     background: white;
     text-align: center;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between; /* Ajusta o conteúdo para ocupar todo o espaço */
     flex-direction: row;
 }
-#texto{
-    
+
+main > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#texto {
+   margin-left: 100px; /* Ajusta o texto para a extremidade esquerda */
+}
+
+#imagem {
+    margin-right: 100px; /* Ajusta a imagem para a extremidade direita */
 }
 main > div > img{
 width: 200px;
 border-radius: 50px;
 
 }
+
 @media (max-width:768px){
     main{
         flex-direction: column;
@@ -84,4 +97,77 @@ border-radius: 50px;
     main > div{
         margin-bottom: 20px;
     }
+    #texto {
+        margin-left: 20px; /* Ajusta o texto para a extremidade esquerda */
+     }
+     
+     #imagem {
+         margin-right: 20px; /* Ajusta a imagem para a extremidade direita */
+     }
+}
+footer{
+    background-color: #265787;
+    height: 700PX;
+    
+}
+footer > nav{
+    background-color: blue;
+    display: flex;
+    align-items:center ;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+footer > nav > div > a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    display: inline-block; /* Permite definir largura e altura */
+    width: 300px; /* Largura do quadrado */
+    height: 300px; /* Altura do quadrado */
+    background-color: rgba(255, 255, 255, 0.2); /* Cor de fundo dos quadrados */
+    text-align: center; /* Centraliza o texto dentro do quadrado */
+    line-height: 100px; /* Alinha verticalmente o texto */
+    border-radius: 10px; /* Bordas arredondadas, opcional */
+    transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+    margin: 0 20px;
+}
+
+/* Efeito ao passar o mouse */
+footer > nav > div > a:hover {
+    background-color: rgba(255, 255, 255, 0.5); /* Muda a cor ao passar o mouse */
+}
+
+ footer > nav > div > img{
+    width: 100px;
+ }   
+ .livro {
+    display: flex;
+    flex-direction: column; /* Alinha os itens em coluna */
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    width: 300px; /* Largura do quadrado */
+    height: 300px; /* Altura do quadrado */
+    background-color: rgba(255, 255, 255, 0.2); /* Cor de fundo */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 10px; /* Espaçamento interno */
+    text-decoration: none; /* Remove o sublinhado do link */
+    color: white; /* Cor do texto */
+}
+
+.livro img {
+    width: 100px; /* Ajusta o tamanho da imagem */
+    margin-bottom: 10px; /* Espaço entre a imagem e o link */
+}
+.livro:hover {
+    background-color: rgba(255, 255, 255, 0.5); /* Efeito ao passar o mouse */
+}
+.livro a {
+    display: flex; /* Permite que a imagem e o texto sejam alinhados */
+    flex-direction: column; /* Alinha itens em coluna */
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    width: 100%; /* Garante que o link ocupe toda a largura da div */
+    height: 100%; /* Garante que o link ocupe toda a altura da div */
+    text-decoration: none; /* Remove o sublinhado do link */
+    color: white; /* Cor do texto */
 }
