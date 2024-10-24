@@ -1,3 +1,8 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'GAMER';
+    src: url(FONTES/Gamer\ Station.ttf) format('TRUETYPE');
+}
 * {
     margin: 0;
     padding: 0;
@@ -9,60 +14,91 @@ body {
 }
 
 header {
-    min-height: 150px;
+    font-family: GAMER;
+    
+    height: 70px;
     background-color: white;
     display: flex;
     justify-content: center; /* Centraliza o conteúdo do header */
     align-items: center; /* Alinha verticalmente */
 }
 
-nav {
+header > nav {
     display: flex;
     align-items: center; /* Alinha verticalmente os itens do nav */
 }
 
-nav > img {
+header > nav > img {
     width: 200px; /* Tamanho da imagem */
-    margin-right: 100px; /* Espaçamento entre a imagem e os links */
+    margin-right: 150px; /* Espaçamento entre a imagem e os links */
+    
 }
 
-nav > a {
+header > nav > a {
     color: #265787;
     text-decoration: none;
-    margin-right: 100px; /* Espaçamento entre os links */
+    margin-right: 150px; /* Espaçamento entre os links */
+    font-size: 20px;
+    text-shadow: 0px 1px 1px black;
 }
+#botao{
+    font-family: GAMER;
+    color: rgba(255, 255, 255, 0.938);
+    background-color: #265787;
+    padding: 7px;
+    font-size: 18px;
+    border-radius: 10px  ;
+    margin-left: 100px;
+    text-shadow: 0px 1px 1px black;
+
+}
+
 
 /* Media Query para telas menores */
-@media (max-width: 768px) {
-    nav > img {
+@media (max-width: 1400px) {
+    header > nav > img {
         width: 150px; /* Ajusta o tamanho da imagem */
         margin-right: 30px; /* Ajusta o espaço entre a imagem e os links */
+        margin-left: 20px;
     }
 
-    nav > a {
+    header > nav > a {
         margin-right: 30px; /* Ajusta o espaço entre os links */
+    }
+    #botao{
+        margin-left: 0px;
     }
 }
 
-@media (max-width: 480px) {
-    nav {
+@media (max-width: 650px) {
+    header > nav {
         flex-direction: row; /* Mantém os itens lado a lado */
         align-items: center; /* Alinha os itens verticalmente */
         justify-content: center; /* Centraliza os itens horizontalmente */
         width: 100%; /* Garante que o nav use toda a largura */
     }
 
-    nav > img {
+    header > nav > img {
         margin-bottom: 0; /* Remove espaço abaixo da imagem */
+        margin-right: 0px;
     }
 
-    nav > a {
-        margin-right: 20px; /* Ajusta o espaço entre os links */
+    header > nav > a {
+        margin-right: 10px; /* Ajusta o espaço entre os links */
+        font-size: 18px;
+
     }
+    #botao{
+        margin-left: 0px;
+        font-size: 16px;
+        text-align: center;
+        
+    }
+
 }
 main {
     height: 400px;
-    background: white;
+    background-color:rgba(255, 255, 255, 0.507);
     text-align: center;
     display: flex;
     align-items: center;
