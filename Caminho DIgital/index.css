@@ -2,7 +2,13 @@
 @font-face {
     font-family: 'GAMER';
     src: url(FONTES/Gamer\ Station.ttf) format('TRUETYPE');
+    
 }
+@font-face {
+    font-family: 'jogo';
+    src: url(FONTES/MechaRx20Regular-j9Zy9.otf) format('opentype');
+}
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sriracha&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -14,13 +20,14 @@ body {
 }
 
 header {
-    font-family: GAMER;
+    font-family:Sriracha;
     
     height: 70px;
     background-color: white;
     display: flex;
     justify-content: center; /* Centraliza o conteúdo do header */
     align-items: center; /* Alinha verticalmente */
+    box-shadow: 0px 1px 1px black;
 }
 
 header > nav {
@@ -42,13 +49,12 @@ header > nav > a {
     text-shadow: 0px 1px 1px black;
 }
 #botao{
-    font-family: GAMER;
+    font-family:Sriracha;
     color: rgba(255, 255, 255, 0.938);
     background-color: #265787;
     padding: 7px;
     font-size: 18px;
     border-radius: 10px  ;
-    margin-left: 100px;
     text-shadow: 0px 1px 1px black;
 
 }
@@ -76,28 +82,31 @@ header > nav > a {
         align-items: center; /* Alinha os itens verticalmente */
         justify-content: center; /* Centraliza os itens horizontalmente */
         width: 100%; /* Garante que o nav use toda a largura */
+       
     }
 
     header > nav > img {
-        margin-bottom: 0; /* Remove espaço abaixo da imagem */
-        margin-right: 0px;
+        
+        margin-right: 15px;
+        margin-left: 1px;
+        width: 120px;
     }
 
     header > nav > a {
-        margin-right: 10px; /* Ajusta o espaço entre os links */
+        margin-right: 15px; /* Ajusta o espaço entre os links */
         font-size: 18px;
 
     }
     #botao{
         margin-left: 0px;
-        font-size: 16px;
+        font-size: 17px;
         text-align: center;
         
     }
 
 }
 main {
-    height: 400px;
+    height: 450px;
     background-color:rgba(255, 255, 255, 0.507);
     text-align: center;
     display: flex;
@@ -115,39 +124,74 @@ main > div {
 
 #texto {
     margin-left: 100px; /* Ajusta o texto para a extremidade esquerda */
-    text-align: left;
+    text-align: center;
     display:flex ;
     align-items: center;
     justify-content: center;
     height: 400px;
     width: 800px;
-    background-color: lightgray;
+    font-size: 16px;
 }
 
 #imagem {
     margin-right: 100px; /* Ajusta a imagem para a extremidade direita */
+    margin-left: 10px;
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    width: 400px;
+    
 }
 main > div > img{
-width: 200px;
+width: 300px;
 border-radius: 50px;
 
 }
 
-@media (max-width:768px){
-    main{
-        flex-direction: column;
-        align-items: center;
-    }
+@media (max-width:1020px){
+   
     main > div{
         margin-bottom: 20px;
     }
+    main > div > img{
+        width: 250px;
+        
+        
+        }        
     #texto {
-        margin-left: 20px; /* Ajusta o texto para a extremidade esquerda */
+        margin: 0 10px;
+        text-align: center;
+        height: 400px;
+        width: 700px;
+        font-size: 15px;
      }
      
      #imagem {
-         margin-right: 20px; /* Ajusta a imagem para a extremidade direita */
+        margin-right: 10px; /* Ajusta a imagem para a extremidade direita */
+        flex-direction: row;
+        justify-content: right;
+        width: 250px;
+    }
+}
+@media (max-width:650px){
+   
+    main {
+        flex-direction: column;
+        height: 600px;
+    }
+    main > div > h2{
+       margin: 0 10px;
+       padding-top: 20px;
+        }
+         
+    #texto {
+        width: 500px;
+       
+        
      }
+     
+   
 }
 footer{
     background-color: blue;
