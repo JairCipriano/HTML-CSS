@@ -10,7 +10,7 @@ body {
 
 header {
     min-height: 150px;
-    background-color: #265787;
+    background-color: white;
     display: flex;
     justify-content: center; /* Centraliza o conteúdo do header */
     align-items: center; /* Alinha verticalmente */
@@ -27,7 +27,7 @@ nav > img {
 }
 
 nav > a {
-    color: white;
+    color: #265787;
     text-decoration: none;
     margin-right: 100px; /* Espaçamento entre os links */
 }
@@ -106,68 +106,69 @@ border-radius: 50px;
      }
 }
 footer{
-    background-color: #265787;
-    height: 700PX;
-    
+    background-color: blue;
+    height: 800px;
 }
 footer > nav{
-    background-color: blue;
     display: flex;
-    align-items:center ;
-    justify-content: space-between;
-    padding: 0 20px;
+    align-items: center;
+    justify-content:center;
 }
-footer > nav > div > a {
-    color: white;
+footer > nav > div > a{
+    background-color: #265787;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 400px;
+    width: 400px;
     text-decoration: none;
-    margin: 0 20px;
-    display: inline-block; /* Permite definir largura e altura */
-    width: 300px; /* Largura do quadrado */
-    height: 300px; /* Altura do quadrado */
-    background-color: rgba(255, 255, 255, 0.2); /* Cor de fundo dos quadrados */
-    text-align: center; /* Centraliza o texto dentro do quadrado */
-    line-height: 100px; /* Alinha verticalmente o texto */
-    border-radius: 10px; /* Bordas arredondadas, opcional */
-    transition: background-color 0.3s; /* Transição suave para a cor de fundo */
-    margin: 0 20px;
+    margin: 20px 70px;
+    color: white;
+    border-radius: 10px;
+    
 }
 
-/* Efeito ao passar o mouse */
-footer > nav > div > a:hover {
-    background-color: rgba(255, 255, 255, 0.5); /* Muda a cor ao passar o mouse */
+footer > nav > div > a >img{
+    width: 200px;
+    margin-bottom: 20px;
+    border-radius: 10px;
 }
 
- footer > nav > div > img{
-    width: 100px;
- }   
- .livro {
-    display: flex;
-    flex-direction: column; /* Alinha os itens em coluna */
-    align-items: center; /* Centraliza horizontalmente */
-    justify-content: center; /* Centraliza verticalmente */
-    width: 300px; /* Largura do quadrado */
-    height: 300px; /* Altura do quadrado */
-    background-color: rgba(255, 255, 255, 0.2); /* Cor de fundo */
-    border-radius: 10px; /* Bordas arredondadas */
-    padding: 10px; /* Espaçamento interno */
-    text-decoration: none; /* Remove o sublinhado do link */
-    color: white; /* Cor do texto */
+.livro :hover{
+    background-color: rgba(255, 255, 255, 0.267);
+    transition: 0.4s;
 }
+@media(max-width:1000px) {
+    footer > nav > div > a > img {
+        width: 100px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+    }
 
-.livro img {
-    width: 100px; /* Ajusta o tamanho da imagem */
-    margin-bottom: 10px; /* Espaço entre a imagem e o link */
+    footer > nav > div > a {
+        height: 200px;
+        width: 200px;
+        margin: 20px 10px;
+        
+       
+        
+    }
 }
-.livro:hover {
-    background-color: rgba(255, 255, 255, 0.5); /* Efeito ao passar o mouse */
-}
-.livro a {
-    display: flex; /* Permite que a imagem e o texto sejam alinhados */
-    flex-direction: column; /* Alinha itens em coluna */
-    align-items: center; /* Centraliza horizontalmente */
-    justify-content: center; /* Centraliza verticalmente */
-    width: 100%; /* Garante que o link ocupe toda a largura da div */
-    height: 100%; /* Garante que o link ocupe toda a altura da div */
-    text-decoration: none; /* Remove o sublinhado do link */
-    color: white; /* Cor do texto */
+@media (max-width: 680px) {
+    footer > nav {
+        flex-direction: column; /* Muda a direção para coluna */
+        align-items: center; /* Centraliza os itens horizontalmente */
+    }
+
+    footer > nav > div > a {
+        height: 230px; /* Ajusta a altura dos links */
+        width: 230px; /* Usa 90% da largura do contêiner */
+        margin: 10px 0; /* Espaçamento vertical entre os links */
+    }
+
+    footer > nav > div > a > img {
+        width: 100px; /* Ajusta o tamanho das imagens */
+        margin-bottom: 10px; /* Espaçamento abaixo da imagem */
+    }
 }
