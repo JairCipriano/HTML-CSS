@@ -112,8 +112,16 @@ main > div {
     align-items: center;
 }
 
+
 #texto {
-   margin-left: 100px; /* Ajusta o texto para a extremidade esquerda */
+    margin-left: 100px; /* Ajusta o texto para a extremidade esquerda */
+    text-align: left;
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    width: 800px;
+    background-color: lightgray;
 }
 
 #imagem {
