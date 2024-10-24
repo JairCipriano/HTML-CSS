@@ -57,6 +57,7 @@ header > nav > a {
     border-radius: 10px  ;
     text-shadow: 0px 1px 1px black;
     text-decoration: none;
+  
 
 }
 
@@ -134,7 +135,7 @@ main > div > h2{
   }
   
 
-#texto {
+.texto {
     margin-left: 100px; /* Ajusta o texto para a extremidade esquerda */
     text-align: center;
     display:flex ;
@@ -146,7 +147,7 @@ main > div > h2{
     
 }
 
-#imagem {
+.imagem {
     margin-right: 100px; /* Ajusta a imagem para a extremidade direita */
     margin-left: 10px;
     display:flex ;
@@ -172,7 +173,7 @@ border-radius: 50px;
         
         
         }        
-    #texto {
+    .texto {
         margin: 0 10px;
         text-align: center;
         height: 400px;
@@ -180,7 +181,7 @@ border-radius: 50px;
         font-size: 15px;
      }
      
-     #imagem {
+     .imagem {
         margin-right: 10px; /* Ajusta a imagem para a extremidade direita */
         flex-direction: row;
         justify-content: right;
@@ -198,7 +199,7 @@ border-radius: 50px;
        padding-top: 20px;
         }
          
-    #texto {
+    .texto {
         width: 500px;
        
         
@@ -208,12 +209,14 @@ border-radius: 50px;
 }
 footer{
     background-color: white;
-    height: 800px;
+    height: 450px;
+    
 }
 footer > nav{
     display: flex;
     align-items: center;
     justify-content:center;
+    
 }
 footer > nav > div > a{
     background-color: #265787;
@@ -221,8 +224,8 @@ footer > nav > div > a{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 400px;
-    width: 400px;
+    height: 370px;
+    width: 370px;
     text-decoration: none;
     margin: 20px 70px;
     color: white;
@@ -241,6 +244,9 @@ footer > nav > div > a >img{
     transition: 0.4s;
 }
 @media(max-width:1000px) {
+    footer{
+        height: 250px;
+    }
     footer > nav > div > a > img {
         width: 100px;
         margin-bottom: 20px;
@@ -257,6 +263,9 @@ footer > nav > div > a >img{
     }
 }
 @media (max-width: 680px) {
+    footer{
+        height: 800px;
+    }
     footer > nav {
         flex-direction: column; /* Muda a direção para coluna */
         align-items: center; /* Centraliza os itens horizontalmente */
@@ -271,5 +280,73 @@ footer > nav > div > a >img{
     footer > nav > div > a > img {
         width: 100px; /* Ajusta o tamanho das imagens */
         margin-bottom: 10px; /* Espaçamento abaixo da imagem */
+    }
+}
+.estudante{
+    height: 450px;
+    background-color:white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ajusta o conteúdo para ocupar todo o espaço */
+    flex-direction: row;
+    margin-top: 10px;
+}
+.foto{
+   
+    margin-left: 100px;
+    margin-right: 10px;
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    width: 400px;
+}
+.frase{
+   
+    margin-right: 100px;
+    text-align: center;
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    width: 800px;
+    font-size: 16px;
+}
+@media (max-width:1020px){
+   
+    main > div{
+        margin-bottom: 20px;
+    }
+    main > div > img{
+        width: 250px;
+        
+        
+        }        
+    .frase {
+        margin: 0 10px;
+        text-align: center;
+        height: 400px;
+        width: 700px;
+        font-size: 15px;
+
+     }
+
+     
+     .foto {
+        margin-left: 10px;
+        flex-direction: row;
+        justify-content: right;
+        width: 250px;
+        margin-left: 20px;
+    }
+    .frase > h1{
+        padding-bottom: 0px;
+        font-size: 24px;
+    }
+    .frase > h2{
+        padding-top: 8px;
+        font-size: 21.5px;
+        padding-bottom: 5px;
     }
 }
