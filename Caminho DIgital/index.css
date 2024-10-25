@@ -52,11 +52,12 @@ header > nav > a {
     font-family:Sriracha;
     color: rgba(255, 255, 255, 0.938);
     background-color: #265787;
-    padding: 7px;
+    padding: 10px;
     font-size: 19px;
     border-radius: 10px  ;
     text-shadow: 0px 1px 1px black;
     text-decoration: none;
+
   
 
 }
@@ -75,6 +76,7 @@ header > nav > a {
     }
     .botao{
         margin-left: 0px;
+        padding: 7px;
     }
 }
 
@@ -103,6 +105,7 @@ header > nav > a {
         margin-left: 0px;
         font-size: 17px;
         text-align: center;
+        padding: 7px;
         
     }
 
@@ -293,7 +296,7 @@ footer > nav > div > a >img{
     margin-top: 10px;
 }
 .foto{
-   
+    margin-bottom: 0px;
     margin-left: 100px;
     margin-right: 10px;
     display:flex ;
@@ -301,6 +304,7 @@ footer > nav > div > a >img{
     justify-content: center;
     height: 400px;
     width: 400px;
+    padding: 20px;
 }
 .frase{
    
@@ -348,5 +352,18 @@ footer > nav > div > a >img{
         padding-top: 8px;
         font-size: 21.5px;
         padding-bottom: 5px;
+    }
+}
+@media(max-width:632px){
+    .estudante{
+        height: 600px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .frase{
+        width: 400px;
+
     }
 }
