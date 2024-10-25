@@ -21,7 +21,7 @@ body {
 
 header {
     font-family:Sriracha;
-    
+   
     height: 70px;
     background-color: white;
     display: flex;
@@ -47,6 +47,10 @@ header > nav > a {
     margin-right: 150px; /* Espaçamento entre os links */
     font-size: 20px;
     text-shadow: 0px 1px 1px black;
+
+}
+header > nav > a:hover{
+    color: #e87d0d;
 }
 .botao{
     font-family:Sriracha;
@@ -57,12 +61,11 @@ header > nav > a {
     border-radius: 10px  ;
     text-shadow: 0px 1px 1px black;
     text-decoration: none;
-
-  
-
 }
-
-
+.botao:hover{
+    color: white;
+    background-color: #e87d0d;
+}
 /* Media Query para telas menores */
 @media (max-width: 1400px) {
     header > nav > img {
@@ -366,4 +369,8 @@ footer > nav > div > a >img{
         width: 400px;
 
     }
+}
+#final{
+    height: 20px;
+    background-color: white;
 }
