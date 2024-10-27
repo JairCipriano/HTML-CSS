@@ -27,7 +27,7 @@ header {
     display: flex;
     justify-content: center; /* Centraliza o conteúdo do header */
     align-items: center; /* Alinha verticalmente */
-    box-shadow: 0px 1px 1px black;
+    
 }
 
 header > nav {
@@ -45,7 +45,7 @@ header > nav > a {
     color: #265787;
     text-decoration: none;
     margin-right: 150px; /* Espaçamento entre os links */
-    font-size: 20px;
+    font-size: 22px;
     text-shadow: 0px 1px 1px black;
 
 }
@@ -115,8 +115,17 @@ header > nav > a:hover{
 
 }
 main {
-    height: 450px;
-    background-color:rgba(255, 255, 255, 0.507);
+    height: 550px;
+    background-color: #265787;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ajusta o conteúdo para ocupar todo o espaço */
+    flex-direction: row;
+}
+#blender{
+    height: 650px;
+    background-image: linear-gradient(to right, #265787 50%, #e87e0d 80%);
     text-align: center;
     display: flex;
     align-items: center;
@@ -130,17 +139,38 @@ main > div {
     align-items: center;
 }
 
+#blender > div > h1{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 40px;
+    text-shadow: 0px 1px 1px black;
+    color:white;
+}
+#blender > div > h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding-bottom: 30px;
+    color:white;
+  }
+
 main > div > h1{
   font-family: Arial, Helvetica, sans-serif;
   padding-bottom: 40px;
   text-shadow: 0px 1px 1px black;
+  color:black;
 }
 main > div > h2{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     padding-bottom: 30px;
-  }
-  
+    color:black;
+}
+#carac{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 40px;
+    text-shadow: 0px 2px 1px black;
+    color:white;
+}
+
 
 .texto {
     padding-top: 20px;
@@ -165,8 +195,24 @@ main > div > h2{
     width: 400px;
     filter: drop-shadow(1px 1px 5px black);
 }
+.apertar{
+    font-family:Sriracha;
+    color: #265787;
+    background-color: white;
+    padding: 10px;
+    font-size: 19px;
+    border-radius: 10px  ;
+    text-shadow: 0px 1px 1px black;
+    text-decoration: none;
+    box-shadow: 0px 0px 2px black;
+}
+.apertar:hover{
+    color: white;
+    background-color: #e87d0d;
+}
+
 main > div > img{
-width: 300px;
+width: 400px;
 border-radius: 50px;
 
 }
@@ -212,7 +258,10 @@ border-radius: 50px;
 }
 footer{
     background-color: white;
-    height: 450px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
     
 }
 footer > nav{
@@ -233,6 +282,9 @@ footer > nav > div > a{
     margin: 20px 70px;
     color: white;
     border-radius: 10px;
+    font-size: 20px;
+    
+    
     
 }
 
@@ -244,7 +296,7 @@ footer > nav > div > a >img{
     
 }
 footer > nav > div > a >img:hover{
-  scale: 1.2;
+  scale: 1.6;
 }
 .livro :hover{
     background-color: rgba(255, 255, 255, 0.267);
@@ -252,7 +304,7 @@ footer > nav > div > a >img:hover{
 }
 @media(max-width:1000px) {
     footer{
-        height: 250px;
+        height: 450px;
     }
     footer > nav > div > a > img {
         width: 100px;
@@ -263,10 +315,7 @@ footer > nav > div > a >img:hover{
     footer > nav > div > a {
         height: 200px;
         width: 200px;
-        margin: 20px 10px;
-        
-       
-        
+        margin: 20px 10px; 
     }
 }
 @media (max-width: 680px) {
@@ -290,15 +339,16 @@ footer > nav > div > a >img:hover{
     }
 }
 .estudante{
-    height: 450px;
+    height: 650px;
     background-color:white;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: space-between; /* Ajusta o conteúdo para ocupar todo o espaço */
     flex-direction: row;
-    margin-top: 10px;
+    
 }
+
 .foto{
     margin-bottom: 0px;
     margin-left: 200px;
