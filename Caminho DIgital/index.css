@@ -373,6 +373,12 @@ footer > nav > div > a >img:hover{
 }
 #final{
     height: 20px;
-    background-color: white;
-    
+    background-color: black;
+}
+#final > h1{
+    font-family: sriracha;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    padding: 2px;
 }
