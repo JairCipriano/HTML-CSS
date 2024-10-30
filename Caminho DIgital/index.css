@@ -1,13 +1,5 @@
 @charset "utf-8";
-@font-face {
-    font-family: 'GAMER';
-    src: url(FONTES/Gamer\ Station.ttf) format('TRUETYPE');
-    
-}
-@font-face {
-    font-family: 'jogo';
-    src: url(FONTES/MechaRx20Regular-j9Zy9.otf) format('opentype');
-}
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sriracha&display=swap');
 * {
     margin: 0;
@@ -15,12 +7,12 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: open sans;
     background-color: white;
 }
 
 header {
-    font-family:Sriracha;
+    font-family:open sans;
     height: 60px;
     background-color: white;
     display: flex;
@@ -46,6 +38,7 @@ header > nav > a {
     margin-right: 150px; /* Espaçamento entre os links */
     font-size: 22px;
     text-shadow: 0px 1px 1px black;
+    font-weight: 600;
 
 }
 header > nav > a:hover{
@@ -122,14 +115,18 @@ main {
     justify-content: space-between; /* Ajusta o conteúdo para ocupar todo o espaço */
     flex-direction: row;
 }
+
 #blender{
     height: 700px;
-    background-image: linear-gradient(to right, #265787 50%, #8893B9 80%);
-    text-align: center;
+    background-color: rgba(211, 211, 211, 0.712);
     display: flex;
     align-items: center;
     justify-content: space-between; /* Ajusta o conteúdo para ocupar todo o espaço */
     flex-direction: row;
+    background-image: url(imagens/3435135.jpg);
+    background-size: cover;
+    
+    
 }
 
 main > div {
@@ -142,13 +139,27 @@ main > div {
     font-family: Arial, Helvetica, sans-serif;
     padding-bottom: 40px;
     text-shadow: 0px 1px 1px black;
-    color:white;
+    color: #265787;
+    font-size: 5em;
+    font-weight: bold;
+    
 }
 #blender > div > h2{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     padding-bottom: 30px;
-    color:white;
+    color: #265787;
+    font-size: 3em;
+    
+  
+  }
+.lara{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding-bottom: 30px;
+    color: #e87d0d;
+    
+  
   }
 
 #carac{
@@ -156,20 +167,32 @@ main > div {
     padding-bottom: 40px;
     text-shadow: 0px 2px 1px black;
     color:white;
+    font-size: 3em;
 }
+.marcador {
+    padding-top: 20px;
+    margin-left: 200px; /* Ajusta o texto para a extremidade esquerda */
+    text-align: left;
+    display:flex ;
+    align-items: flex-start;
+    
+    height: 300px;
+    width: 900px;
+    font-size: 16px; 
+}
+
 
 
 .texto {
     padding-top: 20px;
     margin-left: 200px; /* Ajusta o texto para a extremidade esquerda */
-    text-align: center;
+    text-align: left;
     display:flex ;
-    align-items: center;
-    justify-content: center;
-    height: 400px;
-    width: 800px;
-    font-size: 16px;
+    align-items: flex-start;
     
+    height: 400px;
+    width: 1000px;
+    font-size: 16px; 
 }
 
 .imagem {
@@ -180,18 +203,21 @@ main > div {
     justify-content: center;
     height: 400px;
     width: 400px;
-    filter: drop-shadow(1px 1px 5px black);
+    filter: drop-shadow(1px 3px 5px black);
+   
+    
 }
 .apertar{
-    font-family:Sriracha;
-    color: #265787;
-    background-color: white;
+    font-family:open sans;
+    color: white;
+    background-color: #265787;
     padding: 10px;
     font-size: 19px;
     border-radius: 10px  ;
     text-shadow: 0px 1px 1px black;
     text-decoration: none;
     box-shadow: 0px 0px 2px black;
+    margin-left: 50%;
 }
 .apertar:hover{
     color: white;
@@ -337,18 +363,23 @@ footer > nav > div > a >img:hover{
 }
 
 .foto{
+    margin-top: 150px;
     margin-bottom: 0px;
-    margin-left: 200px;
-    margin-right: 10px;
+    margin-left: 50px;
+    margin-right: 5px;
     display:flex ;
     align-items: center;
     justify-content: center;
-    height: 400px;
-    width: 400px;
+    height: 600px;
+    width: 600px;
     padding: 20px;
+    
+}
+.foto > img{
+    width: 800px;
 }
 .ajusta{
-    margin-right: 200px;
+    margin-right: 50px;
     text-align: center;
     display:flex ;
     align-items: center;
@@ -359,31 +390,39 @@ footer > nav > div > a >img:hover{
 }
 .frase{
    
-    margin-right: 200px;
+    margin-right: 100px;
     text-align: center;
     display:flex ;
     align-items: center;
     justify-content: center;
-    height: 400px;
-    width: 800px;
+    height: 800px;
+    width: 950px;
     font-size: 16px;
     flex-direction: column;
+   
     
 }
 .frase > h1{
     font-family: Arial, Helvetica, sans-serif;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
     text-shadow: 0px 1px 1px black;
     color:black;
+    font-size: 4em;
+    text-align: right;
+    color: #265787;
+    font-weight: bold;
   }
   .frase > h2{
       font-family: Arial, Helvetica, sans-serif;
-      font-weight: bold;
+      font-weight: bolder;
       padding-bottom: 30px;
       color:black;
+      font-size: 2em;
+      text-align: right;
+      color: #265787;
 }
 .laranja {
-    margin-right: 200px; /* Ajusta a imagem para a extremidade direita */
+    margin-right: 100px; /* Ajusta a imagem para a extremidade direita */
     margin-left: 10px;
     display:flex ;
     align-items: center;
@@ -395,7 +434,7 @@ footer > nav > div > a >img:hover{
 
 }
 .laranja > img{
-    width: 200px;
+    width: 170px;
 }
 @media (max-width:1020px){
    
