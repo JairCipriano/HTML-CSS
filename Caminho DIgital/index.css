@@ -45,7 +45,7 @@ header > nav > a:hover{
     color: #e87d0d;
 }
 .botao{
-    font-family:Sriracha;
+    font-family:open sans;
     color: rgba(255, 255, 255, 0.938);
     background-color: #265787;
     padding: 10px;
@@ -271,7 +271,7 @@ border-radius: 50px;
 }
 footer{
     background-color: white;
-    height: 500px;
+    height: 600px;
     display: flex;
     align-items: center;
     justify-content:center;
@@ -284,29 +284,28 @@ footer > nav{
     
 }
 footer > nav > div > a{
+    font-family: open sans;
+    font-weight: 700;
     background-color: #265787;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 370px;
-    width: 370px;
+    height: 470px;
+    width: 470px;
     text-decoration: none;
     margin: 20px 70px;
     color: white;
     border-radius: 10px;
-    font-size: 20px;
-    
-    
-    
+    font-size: 30px;   
 }
-
+footer > nav > div > a:hover{
+   background-color: #265787;
+}
 footer > nav > div > a >img{
-    width: 200px;
+    width: 300px;
     margin-bottom: 20px;
     border-radius: 10px;
-    
-    
 }
 footer > nav > div > a >img:hover{
   scale: 1.6;
@@ -359,6 +358,7 @@ footer > nav > div > a >img:hover{
     align-items: center;
     justify-content: space-between; /* Ajusta o conteúdo para ocupar todo o espaço */
     flex-direction: row;
+    
     
 }
 
@@ -486,6 +486,59 @@ footer > nav > div > a >img:hover{
 
     }
 }
+
+#assista{
+    background-image: url(imagens/fundo\ 2.jpg);
+    height: 900px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+
+}
+
+#assista > nav{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    
+}
+#assista > nav > div > div > a{
+    font-family: open sans;
+    font-weight: 700;
+    background-color: #265787;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 470px;
+    width: 470px;
+    text-decoration: none;
+    margin: 20px 70px;
+    color: white;
+    border-radius: 10px;
+    font-size: 30px;   
+}
+#assista > nav > div > div > a >img{
+    width: 300px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+#organiza{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+#assista > nav > div > h1{
+    color: white;
+    font-family: open sans;
+    font-weight: bold;
+    display: flex;
+    margin-right: 1300px;
+    font-size: 4em;
+    margin-bottom: 100px;
+}
+
 #final{
     height: 20px;
     background-color: black;
