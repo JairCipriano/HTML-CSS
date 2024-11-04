@@ -144,7 +144,7 @@ main > div {
     font-weight: bold;
     
 }
-#blender > div > h2{
+.carac{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     padding-bottom: 30px;
@@ -271,7 +271,7 @@ border-radius: 50px;
 }
 footer{
     background-color: white;
-    height: 600px;
+    height: 700px;
     display: flex;
     align-items: center;
     justify-content:center;
@@ -286,29 +286,37 @@ footer > nav{
 footer > nav > div > a{
     font-family: open sans;
     font-weight: 700;
-    background-color: #265787;
+    background-color: lightgray;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 470px;
-    width: 470px;
+    height: 496px;
+    width: 400px;
     text-decoration: none;
-    margin: 20px 70px;
-    color: white;
-    border-radius: 10px;
-    font-size: 30px;   
+    margin: 25px 70px;
+    color: #265787;
+    border-radius: 12px;
+    font-size: 40px;  
+    border: 1px solid black; 
+}
+#foo{
+    color: #265787;
+    font-size:40px ;
+    margin-bottom: 30px;
 }
 footer > nav > div > a:hover{
    background-color: #265787;
 }
 footer > nav > div > a >img{
-    width: 300px;
-    margin-bottom: 20px;
+    width: 400px;
+    margin-bottom: 10px;
     border-radius: 10px;
+    
 }
+
 footer > nav > div > a >img:hover{
-  scale: 1.6;
+  scale: 1.3;
 }
 .livro :hover{
     background-color: rgba(255, 255, 255, 0.267);
