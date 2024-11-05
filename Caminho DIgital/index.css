@@ -87,9 +87,9 @@ header > nav > a:hover{
 
     header > nav > img {
         
-        margin-right: 15px;
+        margin-right: 0px;
         margin-left: 1px;
-        width: 120px;
+        width: 160px;
     }
 
     header > nav > a {
@@ -106,16 +106,6 @@ header > nav > a:hover{
     }
 
 }
-main {
-    height: 700px;
-    background-color: #265787;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: space-between; /* Ajusta o conteúdo para ocupar todo o espaço */
-    flex-direction: row;
-}
-
 #blender{
     height: 700px;
     background-color: rgba(211, 211, 211, 0.712);
@@ -125,16 +115,7 @@ main {
     flex-direction: row;
     background-image: url(imagens/3435135.jpg);
     background-size: cover;
-    
-    
 }
-
-main > div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 #blender > div > h1{
     font-family: Arial, Helvetica, sans-serif;
     padding-bottom: 40px;
@@ -158,8 +139,6 @@ main > div {
     font-weight: bold;
     padding-bottom: 30px;
     color: #e87d0d;
-    
-  
   }
 
 #carac{
@@ -180,9 +159,6 @@ main > div {
     width: 900px;
     font-size: 16px; 
 }
-
-
-
 .texto {
     padding-top: 20px;
     margin-left: 200px; /* Ajusta o texto para a extremidade esquerda */
@@ -194,7 +170,6 @@ main > div {
     width: 1000px;
     font-size: 16px; 
 }
-
 .imagem {
     margin-right: 200px; /* Ajusta a imagem para a extremidade direita */
     margin-left: 10px;
@@ -223,7 +198,28 @@ main > div {
     color: white;
     background-color: #e87d0d;
 }
-
+@media (max-width:1800px){
+    .texto{
+        margin-left: 30px;
+    }
+    .imagem{
+        margin-right: 30px;
+    }
+}
+main {
+    height: 700px;
+    background-color: #265787;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ajusta o conteúdo para ocupar todo o espaço */
+    flex-direction: row;
+}
+main > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 main > div > img{
 width: 400px;
 border-radius: 50px;
@@ -291,27 +287,36 @@ footer > nav > div > a{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 496px;
+    height: 400px;
     width: 400px;
     text-decoration: none;
-    margin: 25px 70px;
+    margin: 0 70px;
     color: #265787;
     border-radius: 12px;
     font-size: 40px;  
     border: 1px solid black; 
+    margin-bottom: 0;
 }
-#foo{
+.foo{
     color: #265787;
     font-size:40px ;
-    margin-bottom: 30px;
+    padding: 25px 0;
+    
+    
 }
+.livro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 footer > nav > div > a:hover{
    background-color: #265787;
 }
 footer > nav > div > a >img{
     width: 400px;
-    margin-bottom: 10px;
     border-radius: 10px;
+   
     
 }
 
@@ -384,7 +389,7 @@ footer > nav > div > a >img:hover{
     
 }
 .foto > img{
-    width: 800px;
+    width: 750px;
 }
 .ajusta{
     margin-right: 50px;
@@ -527,7 +532,8 @@ footer > nav > div > a >img:hover{
     font-size: 30px; 
 }
 #assista > nav > div > div > a >img{
-    width: 400px;
+    width: 500px;
+    height: 300px;
     margin-bottom: 30px;
     border-radius: 10px;
 }
@@ -545,9 +551,18 @@ footer > nav > div > a >img:hover{
     font-size: 4em;
     margin-bottom: 100px;
 }
+#assista > nav > #organiza > div > a{
+    height: 350px;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 30px;
+
+}
 
 #final{
-    height: 20px;
+    height: 30px;
     background-color: black;
 }
 #final > h1{
