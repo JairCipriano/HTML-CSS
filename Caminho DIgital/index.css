@@ -107,7 +107,7 @@ header > nav > a:hover{
 
 }
 #blender{
-    height: 700px;
+    height: 800px;
     background-color: rgba(211, 211, 211, 0.712);
     display: flex;
     align-items: center;
@@ -129,8 +129,9 @@ header > nav > a:hover{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     padding-bottom: 30px;
+    padding-left: 10px;
     color: #265787;
-    font-size: 3em;
+    font-size: 2.5em;
     
   
   }
@@ -140,47 +141,15 @@ header > nav > a:hover{
     padding-bottom: 30px;
     color: #e87d0d;
   }
-
-#carac{
-    font-family: Arial, Helvetica, sans-serif;
-    padding-bottom: 40px;
-    text-shadow: 0px 2px 1px black;
-    color:white;
-    font-size: 3em;
-}
-.marcador {
-    padding-top: 20px;
-    margin-left: 200px; /* Ajusta o texto para a extremidade esquerda */
-    text-align: left;
-    display:flex ;
-    align-items: flex-start;
-    
-    height: 300px;
-    width: 900px;
-    font-size: 16px; 
-}
 .texto {
     padding-top: 20px;
     margin-left: 200px; /* Ajusta o texto para a extremidade esquerda */
     text-align: left;
     display:flex ;
     align-items: flex-start;
-    
     height: 400px;
     width: 1000px;
     font-size: 16px; 
-}
-.imagem {
-    margin-right: 200px; /* Ajusta a imagem para a extremidade direita */
-    margin-left: 10px;
-    display:flex ;
-    align-items: center;
-    justify-content: center;
-    height: 400px;
-    width: 400px;
-    filter: drop-shadow(1px 3px 5px black);
-   
-    
 }
 .apertar{
     font-family:open sans;
@@ -198,6 +167,21 @@ header > nav > a:hover{
     color: white;
     background-color: #e87d0d;
 }
+.imagem {
+    margin-right: 150px; /* Ajusta a imagem para a extremidade direita */
+    margin-left: 10px;
+    display:flex ;
+    align-items: flex-start;
+    justify-content: center;
+    height: 600px;
+    width: 500px;
+    filter: drop-shadow(1px 3px 5px black);
+}
+main > .imagem > img{
+    width: 500px;
+    border-radius: 50px;
+    
+    }
 @media (max-width:1800px){
     .texto{
         margin-left: 30px;
@@ -255,10 +239,48 @@ main > div {
     flex-direction: column;
     align-items: center;
 }
-main > div > img{
-width: 400px;
+main > .imag > img{
+width: 600px;
 border-radius: 50px;
 
+}
+.h11{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 40px;
+    text-shadow: 0px 1px 1px black;
+    color: white;
+    font-size: 5em;
+    font-weight: bold;
+    
+}
+#carac{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 40px;
+    text-shadow: 0px 2px 1px black;
+    color:white;
+    font-size: 2.5em;
+}
+.marcador {
+    padding-top: 20px;
+    margin-left: 200px; /* Ajusta o texto para a extremidade esquerda */
+    text-align: left;
+    display:flex ;
+    align-items: flex-start;
+    height: 500px;
+    width: 1000px;
+    font-size: 16px; 
+}
+.imag {
+    margin-right: 200px; /* Ajusta a imagem para a extremidade direita */
+    margin-left: 10px;
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+    height: 620px;
+    width: 500px;
+    filter: drop-shadow(1px 3px 5px black);
+    background-color: white;
+    border-radius: 50%;
 }
 
 @media (max-width:1020px){
@@ -268,8 +290,6 @@ border-radius: 50px;
     }
     main > div > img{
         width: 250px;
-        
-        
         }        
     .texto {
         margin: 0 10px;
@@ -301,7 +321,7 @@ border-radius: 50px;
      }
 }
 footer{
-    background-color: white;
+    background-color: whitesmoke;
     height: 700px;
     display: flex;
     align-items: center;
@@ -399,7 +419,7 @@ footer > nav > div > a >img:hover{
     }
 }
 .estudante{
-    height: 700px;
+    height: 800px;
     background-color:white;
     text-align: center;
     display: flex;
