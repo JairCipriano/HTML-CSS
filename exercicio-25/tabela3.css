@@ -15,3 +15,12 @@ th, tr{
     border: 1px solid lightgray;
     padding: 10px;
 }
+.cgrupos{
+    background-color: aqua;
+}
+.cnomes{
+    background-color: blue;
+}
+.cfilmes{
+    background-color: blueviolet;
+}
