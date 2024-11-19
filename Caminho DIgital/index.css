@@ -61,7 +61,7 @@ header > nav > a:hover{
 /* Media Query para telas menores */
 @media (max-width: 1600px) {
     header > nav > img {
-        width: 150px; /* Ajusta o tamanho da imagem */
+        width: 200px; /* Ajusta o tamanho da imagem */
         margin-right: 100px; /* Ajusta o espaço entre a imagem e os links */
         margin-left: 20px;
     }
@@ -117,7 +117,6 @@ header > nav > a:hover{
     align-items: center;
     justify-content: space-between; /* Ajusta o conteúdo para ocupar todo o espaço */
     flex-direction: row;
-    background-image: url(imagens/3435135.jpg);
     background-size: cover;
 }
 .h2{
@@ -162,9 +161,7 @@ header > nav > a:hover{
     padding: 10px;
     font-size: 19px;
     border-radius: 10px  ;
-    text-shadow: 0px 1px 1px black;
     text-decoration: none;
-    box-shadow: 0px 0px 2px black;
     margin-left: 50%;
 }
 .apertar:hover{
@@ -182,25 +179,64 @@ header > nav > a:hover{
 }
 main > .imagem > img{
     width: 500px;
-    border-radius: 50px;
+    
     
     }
 @media (max-width:1600px){
-    .texto{
-        margin-left: 40px;
-        background-color:#6385a8;
+    #blender {
+        position: relative; /* Necessário para que os elementos internos sejam posicionados em relação a esse contêiner */
+        height: 400px;
+        background-color: rgba(211, 211, 211, 0.712);
+        text-align: center; /* Centraliza o conteúdo no main */
+    }
+    
+    .texto {
+        color: white; /* Cor do texto */
+        position: relative;
+        z-index: 10; /* Garante que o texto fique acima da imagem */
+        margin-left: 50px; /* Ajusta o texto para a extremidade esquerda */
+
+    }
+    .carac{
+        font-size: 35px;
+    }
+    .h2{
+        font-size: 56px;
+    }
+    
+    .imagem {
+       display: flex;   
+        margin-right: 0;
+        text-align: right;
+        float: right; /* Alinha a imagem à direita */
+        padding: 0; /* Remove preenchimento interno, caso exista */
+        align-items: flex-start;
+        position: relative;
+        z-index: 5; /* A imagem ficará atrás do texto */
+    }
+    .apertar{
+        margin-left: 200px;
+    }
+    .imagem > img {
+       width: 400px; /* Define a largura fixa */
+       height: auto; /* Mantém a proporção */
+        margin-bottom: 450px;
+        
         
     }
-    .imagem{
-        margin-right: 30px;
-    }
+    
 }
+
 @media (max-width:1380px){
     #blender{
         align-items: flex-start;
     }
     .imagem{
         padding-top: 100px;
+    }
+    h2{
+        padding: 30px;
+        font-size: 20px;
     }
   
 }
