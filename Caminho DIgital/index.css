@@ -37,7 +37,7 @@ header > nav > img {
 header > nav > a {
     color: #6385a8;
     text-decoration: none;
-    margin-right: 200px; /* Espaçamento entre os links */
+    margin-right: 120px; /* Espaçamento entre os links */
     font-size: 22px;
     font-weight: 600px;
 
@@ -55,7 +55,7 @@ header > nav > a:hover{
     text-shadow: 0px 1px 1px black;
     text-decoration: none;
     box-shadow: 0px 0px 2px black;
-    margin-right: 50px;
+    margin-right: 20px;
 }
 .botao:hover{
     color: lightgray;
