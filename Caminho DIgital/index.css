@@ -62,7 +62,7 @@ header > nav > a:hover{
     background-color: #e87d0d;
 }
 #blender{
-    height: 800px;
+    height: 700px;
     background-color: rgba(211, 211, 211, 0.712);
     display: flex;
     align-items: center;
