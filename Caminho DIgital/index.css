@@ -75,7 +75,7 @@ header > nav > a:hover{
     padding-bottom: 40px;
     text-shadow: 0px 1px 1px black;
     color: #265787;
-    font-size: 5em;
+    font-size: 4em;
     font-weight: bold;
     
 }
@@ -96,12 +96,11 @@ header > nav > a:hover{
     color: #e87d0d;
   }
 .texto {
-    padding-top: 20px;
-    margin-left: 200px; /* Ajusta o texto para a extremidade esquerda */
+    margin-left: 60px; /* Ajusta o texto para a extremidade esquerda */
     text-align: left;
     display:flex ;
     align-items: flex-start;
-    height: 400px;
+    height: 550px;
     width: 1000px;
     font-size: 16px; 
 }
